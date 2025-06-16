@@ -1,0 +1,92 @@
+.big-circle {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40vw;
+    height: 40vw;
+    max-width: 500px;
+    max-height: 500px;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 50%;
+    animation: big-circle-animation 30s linear infinite;
+    z-index: 0;
+    filter: blur(71px);
+    box-shadow: 0 0 69px rgba(255, 255, 255, 0.5);
+    pointer-events: none;
+}
+
+.small-circle-2 {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(40%, -10%);
+    width: 20vw;
+    height: 20vw;
+    max-width: 250px;
+    max-height: 250px;
+    background-color: rgba(0, 173, 241, 0.15);
+    border-radius: 50%;
+    animation: small-circle-2-animation 25s linear infinite;
+    z-index: 0;
+    filter: blur(60px);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.01);
+    pointer-events: none;
+}
+
+.small-circle-1 {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-200%, -90%);
+    width: 10vw;
+    height: 10vw;
+    max-width: 250px;
+    max-height: 250px;
+    background-color: rgba(241, 201, 0, 0.15);
+    border-radius: 50%;
+    animation: small-circle-1-animation 15s linear infinite;
+    z-index: 0;
+    filter: blur(60px);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.01);
+    pointer-events: none;
+}
+
+
+@keyframes big-circle-animation {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+@keyframes small-circle-1-animation {
+    0% {
+        transform: translate(-200%, -90%);
+    }
+
+    50% {
+        transform: translate(-200%, -10%) rotate(180deg);
+    }
+
+    100% {
+        transform: translate(-200%, -90%) rotate(-360deg);
+    }
+}
+
+@keyframes small-circle-2-animation {
+    0% {
+        transform: translate(40%, -10%);
+    }
+
+    50% {
+        transform: translate(40%, 40%) rotate(180deg);
+    }
+
+    100% {
+        transform: translate(40%, -10%) rotate(-360deg);
+    }
+}

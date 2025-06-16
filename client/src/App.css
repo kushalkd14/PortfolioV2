@@ -1,0 +1,21 @@
+
+.kd-illustrative-image {
+    backdrop-filter: backdrop-blur(10px);
+    animation: UpDownAnimation 5s linear infinite;
+    transition: all 0.3s ease-in-out;
+}
+
+@keyframes UpDownAnimation {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+
+}
