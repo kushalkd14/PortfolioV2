@@ -23,7 +23,7 @@ const WorkExperienceSection = () => {
                                 <span className="text-sm text-gray-400 font-bold">1.6+ Years</span>
                             </div>
                             <p className="text-gray-300 text-sm mt-1">
-                                Parsystent Prime LLP &mdash; Startup Environment
+                                <a href="https://parsystent.com/" target='_blank' className='text-decoration-none text-white font-bold'>Parsystent Prime LLP</a> &mdash; Startup Environment
                             </p>
                             <ul className="list-disc list-inside text-gray-400 text-sm mt-3 space-y-1">
                                 <li>Led development of scalable web applications with modern stacks.</li>

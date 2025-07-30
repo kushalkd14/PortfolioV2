@@ -28,8 +28,8 @@ const TechStack = () => {
     ];
 
 
-    const repeatedFrontStack = [...firstArr, ...firstArr];
-    const repeatedBackStack = [...SecondArr, ...SecondArr];
+    const repeatedFrontStack = [...firstArr, ...firstArr, ...firstArr, ...firstArr];
+    const repeatedBackStack = [...SecondArr, ...SecondArr, ...SecondArr, ...SecondArr];
 
 
     return (
@@ -53,7 +53,7 @@ const TechStack = () => {
 
                     <div className="overflow-hidden">
                         <div className="marquee-inner-right">
-                            {[...SecondArr, ...SecondArr].map((item, index) => (
+                            {repeatedBackStack.map((item, index) => (
                                 <div key={index} className="tech-icon">
                                     <img src={item.url} alt={item.name} className="w-16 h-16 mb-1" />
                                     <span className="text-white text-xs">{item.name}</span>

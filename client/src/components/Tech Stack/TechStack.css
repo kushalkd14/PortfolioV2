@@ -13,13 +13,11 @@
 }
 
 .marquee-inner {
-    animation: scroll-left 30s linear infinite;
+    animation: scroll-left 50s linear infinite;
 }
 
 .marquee-inner-right {
-    display: flex;
-    width: max-content;
-    animation: scroll-right 30s linear infinite;
+    animation: scroll-right 50s linear infinite;
 }
 
 
