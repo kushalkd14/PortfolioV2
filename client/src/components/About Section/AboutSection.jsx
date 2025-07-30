@@ -2,6 +2,7 @@ import React from 'react'
 import Card from '../HTML_Element_Component/Card'
 import Section from '../HTML_Element_Component/Section'
 
+
 const AboutSection = () => {
     return (
         <>
